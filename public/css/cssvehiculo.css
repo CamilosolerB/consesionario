@@ -1,0 +1,59 @@
+body{
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1{
+    text-align: center;
+    color: #222;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.salida ul{
+    list-style: none;
+}
+.salida li a{
+    display: block;
+    color: #fff;
+    padding: 15px;
+    transition: all 1s ease;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.salida li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.d-flex input{
+    border-radius: 7px;
+}
+.pestana{
+    padding: 80px;
+}
+.posicion{
+    width: 50%;
+    height: 505px;
+}
+.contenido{
+    width: 50%;
+    float: right;
+    padding-left: 30px;
+    background-color: #E5E7E9;
+}
+.descripcion{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.descripcion legend{
+    font-size: 2rem;
+}
+.descripcion p{
+    font-size: 17px;
+}

@@ -1,0 +1,50 @@
+<%datos.forEach(function(datos){%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C4E0BAQHilb0nYJ8IIQ/company-logo_200_200/0/1519864677411?e=2159024400&v=beta&t=r6ff3Isc9qJQ_DHY-7cWKOyKFQD_439FY8XmoyWahGE" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cssvehiculo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title><%=datos.marca%> <%=datos.modelo%> <%=datos.estado%></title>
+</head>
+<body>
+    <header>
+        <h1>CasaToro</h1>
+        <form class="d-flex" action="/filtro" method="POST">
+            <input  class="maximo" name="maximo" type="number" placeholder="Precio maximo" aria-label="Search">
+            <input class="minimo" name="minimo" type="number" placeholder="Precio minimo" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <nav class="salida">
+            <ul>
+                <li><a href="/vistacliente">Ver todos</a></li>
+                <li><a href="/cerrar">Cerrar sesion<i class="fas fa-door-open"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pestana">
+            <img src="https://i.ytimg.com/vi/M41vXA75BYQ/mqdefault.jpg" class="posicion" alt="...">
+            <section class="contenido">
+                <h1><%=datos.marca%> <%=datos.modelo%> <%=datos.estado%></h1>
+                <fieldset class="descripcion">
+                    <legend>informacion del vehiculo</legend>
+                    <p><strong>modelo</strong> : <%=datos.modelo%></p>
+                    <p><strong>Categoria</strong> : <%=datos.catipo%></p>
+                    <p><strong>marca</strong> : <%=datos.marca%></p>
+                    <p><strong>estado</strong> : <%=datos.estado%></p>
+                    <p><strong>placa</strong> : <%=datos.Placa_veh%></p>
+                    <p><strong>precio</strong> : <%=datos.precio%></p>
+                    <legend>informacion del vendedor</legend>
+                    <p><strong>nombre completo </strong> : <%=datos.nombre%> <%=datos.apellido%></p>
+                    <p><strong>telefono</strong> : <%=datos.Telefono%></p>
+                    <p> <strong>Correo</strong> : <%=datos.correo%></p>
+                </fieldset>
+            </section>
+        
+    </div>
+</body>
+</html>
+<%})%>

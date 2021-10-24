@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/actualizar.js"></script>
+    <link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C4E0BAQHilb0nYJ8IIQ/company-logo_200_200/0/1519864677411?e=2159024400&v=beta&t=r6ff3Isc9qJQ_DHY-7cWKOyKFQD_439FY8XmoyWahGE" type="image/x-icon">
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/cssmenuven.css">
+    <title>Menu empleado</title>
+</head>
+<body>
+    <header>
+        <a href="/cerrar"><i class="fas fa-times"></i></a>
+        <% for(i=0;i<=0;i++){%>
+            <h2 class="title">Bienvenido <%=datos[0].nombre%> <%=datos[0].apellido%> <%=datos[0].Numero_ID%></h1>
+            <%}%>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="/vendedor"><i class="fas fa-cart-plus"></i></a></li>
+            <li><a href="/vistacliente"><i class="fas fa-user-edit"></i></a></li>
+            <form action="/actualizame" method="post">
+            <% for(i=0;i<=0;i++){%>
+                <input type="text" class="atributo" value="<%=datos[0].Numero_ID%>" name="documento">
+                <li><input type="submit" value="Actualiza mis datos" class="third" name="" id=""></li>     
+            <%}%>
+        </form>
+            
+        </ul>
+    </nav>
+
+</body>
+</html>

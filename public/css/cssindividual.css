@@ -1,0 +1,122 @@
+body{
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: #fff;
+}
+.baricon li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+.baricon li a:hover{
+    background-color: #fff;
+    color: black;
+}
+.baricon > li{
+    flex-wrap: wrap;
+}
+.baricon li ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 15px;
+}
+.baricon li:hover > ul{
+    display: block;
+    background-color: black;
+    color: #fff;
+}
+
+.menu{
+    list-style: none;
+}
+.datos{
+    flex-wrap: wrap;
+    width: 30%;
+    float: right;
+    background-color: #fff;
+    margin-top: 10%;
+    margin-right: 2%;
+    border-radius: 10px;
+    border: 2px  solid;
+}
+.datos label{
+    float: left;
+    line-height: 2;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.datos .cajas{
+    padding: 15px;
+    background: fixed;
+    border: 0;
+    border-bottom: 2px gray solid;
+}
+.datos .cajas:hover{
+    border-bottom: 2px blueviolet solid;
+}
+.datos .cajas:active{
+    border-bottom: 2px blueviolet solid;
+}
+.buton{
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-left: 100px;
+   width: 60%; 
+   height: 50px;
+   color: #fff;
+    background-color: burlywood;
+    border: 0;
+}
+.tablas{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: 2px solid;
+}
+/*.tablita{
+    overflow: hidden;
+    max-height: 0;
+}*/
+.tablita{
+    flex-wrap: wrap;
+}
+.tablita input{
+    display: block;
+}
+main a{
+    text-decoration: none;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border-bottom: 2px white solid;
+}
+main a:hover{
+    background-color: #fff;
+    color: #000;
+}
+section :target form{
+    max-height: 150px;
+    padding: 10px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

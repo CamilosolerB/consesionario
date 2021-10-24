@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background-image: radial-gradient(circle at 70.82% 20.27%, #ae3992 0, #9d2d96 16.67%, #862398 33.33%, #6a1a9b 50%, #43179e 66.67%, #001aa0 83.33%, #001ea3 100%);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: #fff;
+}
+.baricon li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+.baricon li a:hover{
+    background-color: #fff;
+    color: black;
+}
+.baricon > li{
+    flex-wrap: wrap;
+}
+.baricon li ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 15px;
+}
+.baricon li:hover > ul{
+    display: block;
+    background-color: black;
+    color: #fff;
+}
+
+.menu{
+    list-style: none;
+}
+.form-register{
+    width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-register h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+.controls{
+    display: block;
+    width: 90%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 0;
+    border: 0;
+    border-bottom: 2px #A974C0 solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.form-register .boton{
+    background-color: #9867AE;
+    width: 60%;
+    border: 0;
+}
+.Actualiza{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-size: 1rem;
+}
+.Actualiza:hover{
+    background-color: #fff;
+    color: #000;
+}
+.boton{
+    margin-left: 20%;
+    margin-top: 15%;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+}
+.boton:hover{
+    background-image: radial-gradient(circle at 50% -20.71%, #cbe7e1 0, #cae7e3 6.25%, #c9e7e6 12.5%, #c9e7e8 18.75%, #c9e7eb 25%, #c9e7ed 31.25%, #cae6ef 37.5%, #cbe6f1 43.75%, #cde5f2 50%, #cfe4f3 56.25%, #d1e4f4 62.5%, #d4e3f5 68.75%, #d7e2f5 75%, #dae1f5 81.25%, #dde0f4 87.5%, #e0e0f4 93.75%, #e3dff2 100%);
+    
+}

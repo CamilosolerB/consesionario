@@ -1,0 +1,107 @@
+body{
+    background-color: #f4f4f4;
+}
+h1{
+    text-align: center;
+    color: #222;
+    font-family: 'Times New Roman', Times, serif;
+}
+.acordeon{
+    background-color: aliceblue;
+    padding: 2em;
+    width: 70%;
+    max-width: 120em;
+}
+.acordeon .bloque{
+    margin: 0 0 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.acordeon .h2{
+    margin-bottom: 1em;
+}
+.acordeon .contenido{
+    background-color: aquamarine;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 5s ease;
+}
+.acordeon .bloque.activo .contenido{
+    height: auto;
+}
+.accordion-item{
+    background-color: #D7BDE2;
+}
+.accordion-item input{
+    border-radius: 10px;
+}
+.accordion-item th{
+    color: #fff;
+}
+header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.salida ul{
+    list-style: none;
+}
+.salida li a{
+    display: block;
+    color: #fff;
+    padding: 15px;
+    transition: all 1s ease;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.salida li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.d-flex input{
+    border-radius: 7px;
+}
+.card{
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    transition: all 2s;
+}
+.ventana{
+    display: none;
+    background-color: #E5E7E9;
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    height: 750px;
+    min-height: 250px;
+    border-radius: 10px;
+    position: relative;
+    left: 20%;
+    bottom: 10%;
+}
+.placa{
+    display: none;
+}
+.upload{
+    background-color: yellow;
+    border: 0;
+    border-radius: 4px;
+    transition: all 1s;
+}
+.upload:hover{
+    width: 250px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+}
+.controls{
+    border-radius: 6px;
+    color: gray;
+}

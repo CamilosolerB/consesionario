@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="../js/acordeon.js"></script>
+    <link rel="stylesheet" href="../css/csscomprador.css">
+    <link rel="stylesheet" href="./libreria/fontawesome/css/all.min.css">
+    <title>CasaToro:Usuario</title>
+</head>
+<body>
+    <header>
+        <h1>CasaToro</h1>
+        <form class="d-flex" action="/filtro" method="POST">
+            <input  class="maximo" type="number" placeholder="Precio maximo" aria-label="Search">
+            <input class="minimo" type="number" placeholder="Precio minimo" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <nav class="salida">
+            <ul>
+                <li><a href="/cerrar">Cerrar sesion<i class="fas fa-door-open"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Bienvenido comprador</h1>
+    <h1>Estos son los vehiculos disponibles</h1>
+    <% datos.forEach(function (datos){ %>
+        <div class="botones">
+            <nav>
+                <ul>
+                    <li><a href="/ascendente"></a></li>
+                    <li><a href="/descendete"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">          
+              Vehiculo
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Marca</th>
+                                <th>Estado</th>
+                                <th>Precio</th>
+                                <th>Telefono Vendedor</th>
+                                <th>Nombre Vendedor</th>
+                                <th>Identificacion Vendedor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr class="resu">
+                                    <td><input type="number" value="<%=datos.modelo%>" name="" id="modelo" class="modelo" readonly></td>
+                                    <td><input type="text" value="<%=datos.marca%>" name="" id="marca" class="marca" readonly></td>
+                                    <td><input type="text" value="<%=datos.estado%>" name="" id="estado" class="estado" readonly></td>
+                                    <td><input type="number" value="<%=datos.precio%>" name="" id="precio" class="precio" readonly></td>
+                                    <td><input type="text" value="<%=datos.Telefono%>" readonly></td>
+                                    <td><input type="text" value="<%=datos.nombre%> <%=datos.apellido%>" name="" id="" readonly></td>
+                                    <td><input type="number" value="<%=datos.Numero_ID%>" readonly></td>                                
+                                </form>
+                                </tr>     
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+          </div>
+        </div>
+      <%})%>
+</body>
+</html>

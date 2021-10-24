@@ -1,0 +1,96 @@
+body{
+    background-image: radial-gradient(circle at 100% 0%, #c6d158 0, #d0c94d 7.14%, #d8bf41 14.29%, #e0b537 21.43%, #e6a92d 28.57%, #ec9b26 35.71%, #f08c21 42.86%, #f37b1f 50%, #f56822 57.14%, #f75429 64.29%, #f93d32 71.43%, #fa1b3c 78.57%, #f90048 85.71%, #f80056 92.86%, #f40064 100%);
+    margin: 0;
+    border: 0;
+}
+.title{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    float: right;
+}
+.menu{
+    width: 90%;
+    padding-left: 5%;
+    align-items: center;
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    display: block;
+    padding-top: 240px;
+    padding-bottom: 240px;
+    padding-right: 220px;
+    padding-left: 220px;
+    background-image: linear-gradient(180deg, #4864a9 0, #1f3259 50%, #000015 100%);
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10%;
+}
+.menu li a:hover{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffe7d5 0, #ffe8d2 6.25%, #ffe9cf 12.5%, #ffebce 18.75%, #ffeccc 25%, #ffeecb 31.25%, #fcefcb 37.5%, #f7f1cc 43.75%, #f2f2cd 50%, #edf3cf 56.25%, #e7f5d1 62.5%, #e2f6d4 68.75%, #ddf7d7 75%, #d8f8db 81.25%, #d3f9df 87.5%, #cff9e3 93.75%, #cbfae8 100%);
+    color: #000015;
+    padding-right: 240px;
+    padding-left: 240px;
+    padding-top: 260px;
+    padding-bottom: 260px;
+    transition: all 2s;
+
+}
+.menu li input{
+    margin-top: 100px;
+    padding-top: 240px;
+    padding-bottom: 240px;
+    padding-right: 165px;
+    padding-left: 165px;
+    background-image: linear-gradient(180deg, #4864a9 0, #1f3259 50%, #000015 100%);
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10%;
+    font-size: 80px;
+}
+.menu li input:hover{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffe7d5 0, #ffe8d2 6.25%, #ffe9cf 12.5%, #ffebce 18.75%, #ffeccc 25%, #ffeecb 31.25%, #fcefcb 37.5%, #f7f1cc 43.75%, #f2f2cd 50%, #edf3cf 56.25%, #e7f5d1 62.5%, #e2f6d4 68.75%, #ddf7d7 75%, #d8f8db 81.25%, #d3f9df 87.5%, #cff9e3 93.75%, #cbfae8 100%);
+    color: #000015;
+    padding-top: 240px;
+    padding-bottom: 240px;
+    padding-right: 161px;
+    padding-left: 161px;
+    transition: all 2s;
+    font-size: 100px;
+}
+.fas.fa-cart-plus{
+    font-size: 80px;
+}
+.fas.fa-user-edit{
+    font-size: 80px;
+}
+.fas.fa-cart-plus:hover{
+    font-size: 100px;
+}
+header{
+    background-color: #000015;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+}
+header a{
+    font-size: 60px;
+    color: #fff;
+}
+.data{
+    display: none;
+}
+.actualiza{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+    font-size: 250px;
+    color: #cbfae8;
+}
+.atributo{
+    display: none;
+}

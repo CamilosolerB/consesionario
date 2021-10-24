@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./libreria/fontawesome/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/actuaandeli.js"></script>
+    <script src="../js/acordeon.js"></script>
+    <link rel="stylesheet" href="../css/cssvendedor.css">
+    <link rel="shortcut icon" href="https://media-exp1.licdn.com/dms/image/C4E0BAQHilb0nYJ8IIQ/company-logo_200_200/0/1519864677411?e=2159024400&v=beta&t=r6ff3Isc9qJQ_DHY-7cWKOyKFQD_439FY8XmoyWahGE" type="image/x-icon">
+    <title>CasaToro:Vendedor</title>
+</head>
+<body>
+    <header>
+        <h1>CasaToro</h1>
+            <nav class="baricon">
+                <ul class="menu">
+                    <li><a href="/vistacliente">Cambiar a Cliente</a></li>
+                    <li><a href="/cerrar">Cerrar sesion<i class="fas fa-door-open"></i></a></li>
+    </header>
+    <section class="form-register">
+        <h1 class="titulos">Añadir vehiculo</h1>
+        <form action="/anadirvehiculo" method="POST" class="ingreso">
+            <input class="controls" type="text" name="Placa_veh" value="" placeholder="Numero de placa">
+            <input class="controls" type="number" name="Identificacion" value="" placeholder="Identificacion de usuario"> 
+            <select class="controls" name="categoria" id="categoria">
+            <% datos.forEach(function (datos){%>
+                <option class="controls" value="<%=datos.catid%>"><%=datos.catipo%></option>
+            <%})%>
+            </select>
+            <!--<input class="controls" type="number" name="categoria" value="" placeholder="Numero de categoria">-->
+            <input class="controls" type="number" name="modelo" value="" placeholder="Año de Modelo">
+            <input class="controls" type="text" name="marca" value="" placeholder="Marca del vehiculo">
+            <select class="controls" name="estado" id="estado" placeholder="Estado">
+                <option class="controls" value="Nuevo">Nuevo</option>
+                <option class="controls" value="Usado" >Usado</option>
+            </select>
+            <input class="controls" type="number" name="precio" placeholder="Precio del vehiculo">
+            <input class="boton" type="submit" value="insertar" >
+        </form>
+    </section>
+</body>
+</html>
