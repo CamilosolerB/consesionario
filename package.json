@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.12",
     "path": "^0.12.7",
-    "redirect": "^0.2.0"
+    "redirect": "^0.2.0",
+    "start": "^5.1.0"
   }
 }

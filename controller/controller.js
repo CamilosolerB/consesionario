@@ -36,7 +36,7 @@ controller.login=async(req,res,next)=>{
     const pass=await req.body.password;
     con.query('SELECT * FROM usuario INNER JOIN datospersonales on (ID_Usuario=ID_Usud) INNER JOIN usuario_rol on (ID_Usuario=ID_Usu) INNER JOIN rol on (ID_Rol=ID_Rolo) WHERE login=? AND Clave=?',[usu,pass],(err,results)=>{
         if(err){
-            next(new Error("Error en la consulta login",err));
+            next(new Error("Error en la consulta login:" +err));
         }
         else if(results!=0){
 
