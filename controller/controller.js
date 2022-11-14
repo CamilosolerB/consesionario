@@ -57,9 +57,8 @@ controller.login=async(req,res,next)=>{
                                     //INNER JOIN datospersonales on (ID_Usuario=ID_Usu)
                                 }
                                 else{
-                                    console.log(datos)
-                                    res.render('menuempleado',{datos:resbb})
                                     console.log(resbb)
+                                    res.render('menuempleado',{datos:resbb})
                                 }    
                             })
                             
