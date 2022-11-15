@@ -45,6 +45,7 @@ controller.login=async(req,res,next)=>{
 
             rol=results[0].Rol_tipo;
             data=results[0].ID_data;
+            req.session.identificacion = data;
             console.log(rol)
             console.log(data)
             switch(rol){
@@ -80,7 +81,7 @@ controller.login=async(req,res,next)=>{
 
 controller.anadir=(req,res,next)=>{
     const p = req.body.Placa_veh;
-    const i = req.body.Identificacion;
+    const i = req.session.identificacion;
     const c = req.body.categoria;
     const m = req.body.modelo;
     const ma = req.body.marca;
