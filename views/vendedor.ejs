@@ -24,7 +24,6 @@
         <h1 class="titulos">Añadir vehiculo</h1>
         <form action="/anadirvehiculo" method="POST" class="ingreso">
             <input class="controls" type="text" name="Placa_veh" value="" placeholder="Numero de placa">
-            <input class="controls" type="number" name="Identificacion" value="" placeholder="Identificacion de usuario"> 
             <select class="controls" name="categoria" id="categoria">
             <% datos.forEach(function (datos){%>
                 <option class="controls" value="<%=datos.catid%>"><%=datos.catipo%></option>
