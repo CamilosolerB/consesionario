@@ -20,7 +20,7 @@ $(document).ready(function(){
         alert(m+"\n"+ma+"\n"+e+"\n"+p)
 
        $.ajax({
-            Type:"POST",
+            type:"POST",
             url:"/actualizar",
             data: {
                 plpl:pl,mm:m,mama:ma,ee:e,pp:p
