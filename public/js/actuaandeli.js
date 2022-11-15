@@ -18,18 +18,17 @@ $(document).ready(function(){
         let e=estado.val();
         let p=precio.val();
         alert(m+"\n"+ma+"\n"+e+"\n"+p)
-        
-        $.ajax({
-
-            type:'POST',
-            url:'/actualizar',
-            data:{
+        data = {
                 plpl:pl,mm:m,mama:ma,ee:e,pp:p
             }
-
+        
+        fetch('/actualizar',{
+            method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            body: JSON.stringify(data)
         })
-
-
     })
 
 
